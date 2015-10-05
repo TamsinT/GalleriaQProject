@@ -29,3 +29,73 @@ I am designing this for mobile first. I will need to use min width in my Meta ta
   line-height: 0;
   height: 0;
 }
+header {
+  height: 200px;
+  width: 400px;
+  padding: 50px;
+}
+
+.mobileNav {
+  width: 90%;
+  background-color: lightgrey;
+  margin:auto;
+}
+@media only screen and (min-width: 480px) {
+  .mobileNav {
+    float:left;
+  }
+}
+
+.mobileNav ul {
+  padding: 30px;
+  display: block;
+  list-style: none;
+  font-size: 40px;
+  text-align: center;
+}
+.mobileNav li {
+  border:3px solid #8AC007;
+}
+
+.mobileNav p {
+  padding: 30px;
+  display: block;
+  list-style: none;
+  font-size: 15px;
+}
+.cheeseSummary, .linkCheese, .wineSummary, .linkWine, .charcuterieSummary, .linkChar,  {
+  display: none;
+}
+
+
+
+.menuContent {
+  display: none;
+}
+
+
+footer {
+  width: 90%;
+  height: 150px;
+  margin:auto;
+  background-color: lightgrey;
+}
+.contactFooter {
+  width: 25%;
+  height: 150px;
+  border:2px solid #8AC007;
+  float: left;
+
+}
+.footerMap {
+  width: 50%;
+  height: 150px;
+  border:2px solid #8AC007;
+  float:left;
+}
+.hoursBox {
+  width: 20%;
+  height: 150px;
+  border:2px solid #8AC007;
+  float:right;
+}
