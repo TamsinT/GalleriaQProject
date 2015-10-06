@@ -34,6 +34,29 @@ header {
   width: 400px;
   padding: 50px;
 }
+.browserNav {
+  width: 30%;
+  background-color: lightgrey;
+  margin:auto;
+}
+.browserNav ul {
+  padding: 30px;
+  list-style: none;
+  text-align: center;
+  display: none;
+}
+.browserNav li {
+  border:3px solid #8AC007;
+}
+
+@media only screen and (min-width: 480px) {
+  .browserNav ul{
+    display: block;
+  }
+  .browserNav {
+    margin: none;
+  }
+}
 
 .mobileNav {
   width: 90%;
@@ -42,7 +65,7 @@ header {
 }
 @media only screen and (min-width: 480px) {
   .mobileNav {
-    float:left;
+    display:none;
   }
 }
 
@@ -67,12 +90,22 @@ header {
   display: none;
 }
 
-
-
 .menuContent {
   display: none;
 }
 
+.mobilePage {
+  width: 90%;
+  margin:auto;
+  background-color: lightgrey;
+}
+
+@media only screen and (min-width: 480px) {
+  .mobilePage {
+    width: 60%;
+    float:right;
+  }
+}
 
 footer {
   width: 90%;

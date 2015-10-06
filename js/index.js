@@ -5,7 +5,7 @@ $(document).ready(function(){
   function menuHandler(e) {
     console.log('summary shown');
 
-    $('.menuContent', e.currentTarget).toggle();
+    $('.menuContent', e.currentTarget).toggle(500);
   }
 
 });
