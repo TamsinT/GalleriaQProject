@@ -55,6 +55,7 @@ header {
   }
   .browserNav {
     margin: none;
+    float: left;
   }
 }
 
@@ -94,14 +95,14 @@ header {
   display: none;
 }
 
-.mobilePage {
+.browserPage {
   width: 90%;
   margin:auto;
   background-color: lightgrey;
 }
 
 @media only screen and (min-width: 480px) {
-  .mobilePage {
+  .browserPage {
     width: 60%;
     float:right;
   }
