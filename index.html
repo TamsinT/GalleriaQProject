@@ -14,7 +14,7 @@
 	</head>
 
 	  <body>
-        <header>LOGO HERE</header> <!--- make logo a link to homepage from ALL pages -->
+        <header><img src="images/logo.svg" alt="Galleria Logo" /></header> <!--- make logo a link to homepage from ALL pages -->
 
         <div class="browserNav">
         	<ul>
@@ -27,14 +27,25 @@
         	</ul>
         </div>
 
-				<div class= "mobileNav">
+			<section class= "browserPageHome">
+				<div id="homePageBrowserContent">
+					  <p>
+					  	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					  </p>
+				</div>
+
+			</section>
+
+		<div class= "mobileNav">
 					 <ul>
+						 <li id="menuButton"> MENU </li> <!--- basically my hamburger -->
+
 					 	  <li class= "menuItem">
 								<h2>CHEESE</h2>
-								 <article class="menuContent">
+									 <article class="menuContent">
 									    <p class ="cheeseSummary">Our cheese is sourced from all over the world to ensure the best quality at your fingertips</p>
 											<p class ="linkCheese"><a href="cheese.html">Visit our cheese room &gt;</a></p>
-								 </article>
+									 </article>
 							</li>
 							<li class= "menuItem">
 								<h2>WINE</h2>
@@ -51,9 +62,9 @@
 										</article>
 							</li>
 							<li class ="menuItem">
-								<h2>EQUIPMENT<h2>
-									<article class="menuContent">
-											<p class ="EquipmentSummary">Our items are hand selected from all over the world to ensure the best quality at your fingertips</p>
+								<h2>EQUIPMENT</h2>
+									<article class= "menuContent">
+											<p class ="equipmentSummary">Our items are hand selected from all over the world to ensure the best quality at your fingertips</p>
 											<p class ="linkEquip"><a href="#">Visit our range of specialised items &gt;</a></p>
 									</article>
 						  </li>
@@ -65,12 +76,8 @@
 									</article>
 							</li>
 					 </ul>
-				</div>
+		</div>
 
-				<div class="browserHome">
-
-
-				</div>
 
 				<footer class= "footer">
             <div class="contactFooter">
@@ -82,8 +89,6 @@
 						<div class="hoursBox">
 							<p class="hours"> Opening Hours <br> Mon-Fri 8am-6pm <br> Sat-Sun 9am-5pm	</p>
 						</div>
-
-
 				</footer>
 				<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 				<script src="js/index.js"></script>

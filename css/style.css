@@ -29,15 +29,38 @@ I am designing this for mobile first. I will need to use min width in my Meta ta
   line-height: 0;
   height: 0;
 }
+
 header {
   height: 200px;
-  width: 400px;
-  padding: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: lightgrey;
+  width: 90%;
+}
+
+@media only screen and (min-width: 670px) {
+header {
+  height: 270px;
+  }
+}
+@media only screen and (min-width: 900px) {
+header {
+  height: 370px;
+  }
+}
+
+.thanksAlert {
+  display: none;
+}
+#signUp {
+  color: white;
+  background-color: black;
+  border-radius: 3px;
 }
 .browserNav {
   width: 30%;
   background-color: lightgrey;
-  margin:auto;
+  margin-left: 5%;
 }
 .browserNav ul {
   padding: 30px;
@@ -46,7 +69,8 @@ header {
   display: none;
 }
 .browserNav li {
-  border:3px solid #8AC007;
+  border:1px solid #8AC007;
+  font-size: auto;
 }
 
 @media only screen and (min-width: 480px) {
@@ -70,15 +94,19 @@ header {
   }
 }
 
+.menuItem {
+  display: none;
+}
+
 .mobileNav ul {
   padding: 30px;
   display: block;
   list-style: none;
-  font-size: 40px;
+  font-size: auto;
   text-align: center;
 }
 .mobileNav li {
-  border:3px solid #8AC007;
+  border:1px solid #8AC007;
 }
 
 .mobileNav p {
@@ -95,16 +123,17 @@ header {
   display: none;
 }
 
-.browserPage {
-  width: 90%;
-  margin:auto;
+.browserPageHome, .browserPageCheese, .browserPageNews {
   background-color: lightgrey;
+  display: none;
+  margin-right: 5%;
 }
 
 @media only screen and (min-width: 480px) {
-  .browserPage {
+  .browserPageHome, .browserPageCheese, .browserPageNews {
     width: 60%;
     float:right;
+    display:block;
   }
 }
 
@@ -113,6 +142,7 @@ footer {
   height: 150px;
   margin:auto;
   background-color: lightgrey;
+  clear: both;
 }
 .contactFooter {
   width: 25%;
