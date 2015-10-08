@@ -29,6 +29,15 @@ I am designing this for mobile first. I will need to use min width in my Meta ta
   line-height: 0;
   height: 0;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  cursor:pointer;
+}
 
 header {
   height: 200px;
@@ -61,6 +70,7 @@ header {
   width: 30%;
   background-color: lightgrey;
   margin-left: 5%;
+  margin-bottom: 0px;
 }
 .browserNav ul {
   padding: 30px;
@@ -69,7 +79,6 @@ header {
   display: none;
 }
 .browserNav li {
-  border:1px solid #8AC007;
   font-size: auto;
 }
 
@@ -87,6 +96,7 @@ header {
   width: 90%;
   background-color: lightgrey;
   margin:auto;
+
 }
 @media only screen and (min-width: 480px) {
   .mobileNav {
@@ -95,25 +105,36 @@ header {
 }
 
 .menuItem {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
   display: none;
+}
+#menuButton {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
 }
 
 .mobileNav ul {
-  padding: 30px;
+  padding: 10px;
   display: block;
   list-style: none;
-  font-size: auto;
   text-align: center;
 }
 .mobileNav li {
-  border:1px solid #8AC007;
+  padding: 10px;
+}
+.menuItem h2:hover {
+  color: orange;
 }
 
 .mobileNav p {
-  padding: 30px;
+  padding: 5px 20px;
   display: block;
   list-style: none;
   font-size: 15px;
+  font-weight: 300;
 }
 .cheeseSummary, .linkCheese, .wineSummary, .linkWine, .charcuterieSummary, .linkChar,  {
   display: none;
@@ -143,23 +164,23 @@ footer {
   margin:auto;
   background-color: lightgrey;
   clear: both;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
 }
 .contactFooter {
-  width: 25%;
+  width: 20%;
   height: 150px;
-  border:2px solid #8AC007;
   float: left;
 
 }
 .footerMap {
-  width: 50%;
+  width: 55%;
   height: 150px;
-  border:2px solid #8AC007;
   float:left;
 }
 .hoursBox {
   width: 20%;
   height: 150px;
-  border:2px solid #8AC007;
   float:right;
 }

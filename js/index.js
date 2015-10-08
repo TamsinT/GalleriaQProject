@@ -18,6 +18,8 @@ $(document).ready(function(){
 
     $('.menuContent', e.currentTarget).toggle(500);
     $(e.currentTarget).addClass('open');
+    $('.open').removeClass('open');
+
   }
 
 
