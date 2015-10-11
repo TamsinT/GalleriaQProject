@@ -33,6 +33,7 @@ body {
   height: auto;
   width: auto;
   background-color: #140A00;
+  font-family: 'Josefin Sans', sans-serif;
 }
 a {
   text-decoration: none;
@@ -43,10 +44,10 @@ a:hover {
   text-decoration: none;
   cursor:pointer;
 }
-h3 {
+h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -61,12 +62,18 @@ p {
 
 header {
   height: 200px;
+  background-image: url("../images/picnic.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   margin-left: 5%;
   margin-right: 5%;
   background-color: #E0D6CC;
   width: 90%;
   border-top: 30px solid #140A00;
+  border-bottom: 2px dotted #E0D6CC;
 }
+
 @media only screen and (min-width: 430px) {
 header {
   height: 220px;
@@ -85,7 +92,25 @@ header {
 @media only screen and (min-width: 900px) {
 header {
   height: 400px;
+  background-image: url("../images/picnic1.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   }
+}
+@media only screen and (min-width: 1070px) {
+header {
+  height: 450px;
+  background-image: url("../images/picnic2.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+}
+@media only screen and (min-width: 1200px) {
+header {
+  height: 500px;
+}
 }
 
 #mobilePageBrowserContent {
@@ -112,11 +137,19 @@ margin: 30px 50px 30px 20px;
 #signUp {
   color: white;
   background-color: black;
-  border-radius: 3px;
+  border-radius: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  margin: 20px 200px 20px 200px;
+}
+.signUpForm {
+  text-align: center;
+
 }
 .browserNav {
   width: 30%;
-
   background-color: #E0D6CC;
   margin-left: 5%;
   margin-bottom: 0px;
@@ -125,12 +158,17 @@ margin: 30px 50px 30px 20px;
   font-size: 20px;
 }
 .browserNav ul {
-
   text-align: center;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   list-style: none;
   display: none;
   line-height: 300%;
+}
+.browserNav ul li {
+  border-top: 2px dotted black;
+}
+.browserNav ul li:first-child {
+  border-top: none;
 }
 .browserNav ul li a {
   width: 90%;
@@ -216,6 +254,7 @@ margin: 30px 50px 30px 20px;
   height: 650px;
   float: right;
   padding: 30px 50px 30px 20px;
+  overflow: scroll;
 }
 
 @media only screen and (min-width: 480px) {
@@ -229,7 +268,15 @@ margin: 30px 50px 30px 20px;
   max-width: 90%;
   max-height: 90%;
   margin: 30px 50px 30px 20px;
+  overflow: scroll;
 }
+#newsPost1 img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 30px 50px 30px 20px;
+  overflow: scroll;
+}
+
 
 footer {
   width: 90%;
@@ -265,7 +312,7 @@ footer {
 }
 .hoursBox ul {
   font-size: 15px;
-  padding: 20% 10px;
+  padding: 10% 10px 10% 10px;
   list-style: none;
   text-align: center;
   line-height: 175%;
@@ -288,5 +335,9 @@ footer {
   }
 @media only screen and (min-width: 580px) {
     #mobileContact li:first-child {
-    line-height: 620%;
+    margin-top: 20px;
+    }
+@media only screen and (min-width: 580px) {
+    #mobileContact li img {
+    margin: 20% 4%;
     }
