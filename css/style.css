@@ -229,6 +229,7 @@ margin: 30px 50px 30px 20px;
   display: block;
   list-style: none;
   text-align: center;
+  margin: none;
 }
 .mobileNav li {
   padding: 10px;
@@ -251,7 +252,7 @@ margin: 30px 50px 30px 20px;
   display: none;
 }
 
-.browserPage, .browserPageCheese, .browserPageNews {
+.browserPage  {
   background-color: #E0D6CC;
   display: none;
   margin-right: 5%;
@@ -261,7 +262,7 @@ margin: 30px 50px 30px 20px;
   overflow: scroll;
 }
 @media only screen and (min-width: 480px) {
-  .browserPage, .browserPageCheese, .browserPageNews {
+  .browserPage  {
     width: 60%;
     float:right;
     display:block;
@@ -288,7 +289,7 @@ margin: 30px 50px 30px 20px;
 }
 
 #slider ul {
-  position: relative;
+  position: absolute;
   margin: 0;
   padding: 0;
   height: 200px;

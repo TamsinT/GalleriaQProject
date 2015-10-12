@@ -13,12 +13,21 @@ $(document).ready(function(){
   function menuHandler(e) {
     console.log('summary shown');
 
+    //For the item that was clicked on, is is already open
+    var isOpen = $(e.currentTarget).hasClass('open');
+
+    //close the menu item that is currently open
     $('.open .menuContent').toggle(500);
     $('.open').removeClass('open');
 
-    $('.menuContent', e.currentTarget).toggle(500);
-    $(e.currentTarget).addClass('open');
-    $('.open').removeClass('open');
+    //only expand the item that was clicked on, if it was not already open
+    if(!isOpen) {
+      $('.menuContent', e.currentTarget).toggle(500);
+      $(e.currentTarget).addClass('open');
+    }
+
+
+    //$('.open').removeClass('open');
   }
 
 $("#signUp").on('click', submitEmail);
@@ -46,7 +55,7 @@ $("#signUp").on('click', submitEmail);
        function moveLeft() {
            $('#slider ul').animate({
                left: + slideWidth
-           }, 200, function () {
+           }, 400, function () {
                $('#slider ul li:last-child').prependTo('#slider ul');
                $('#slider ul').css('left', '');
            });
@@ -55,7 +64,7 @@ $("#signUp").on('click', submitEmail);
        function moveRight() {
            $('#slider ul').animate({
                left: - slideWidth
-           }, 200, function () {
+           }, 400, function () {
                $('#slider ul li:first-child').appendTo('#slider ul');
                $('#slider ul').css('left', '');
            });
