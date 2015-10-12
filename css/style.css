@@ -33,6 +33,7 @@ body {
   height: auto;
   width: auto;
   background-color: #140A00;
+  color: #140A00;
   font-family: 'Josefin Sans', sans-serif;
 }
 a {
@@ -40,7 +41,7 @@ a {
   color: inherit;
 }
 a:hover {
-  color: white;
+  color: #D4AF37;
   text-decoration: none;
   cursor:pointer;
 }
@@ -74,7 +75,7 @@ header {
   border-bottom: 2px dotted #E0D6CC;
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (min-width: 480px) {
 header {
   height: 220px;
   }
@@ -113,7 +114,7 @@ header {
 }
 }
 
-#mobilePageBrowserContent {
+.mobilePage {
   width: 90%;
   background-color: #E0D6CC;
   margin:auto;
@@ -121,11 +122,11 @@ header {
   padding: 30px;
 }
 @media only screen and (min-width: 480px) {
-#mobilePageBrowserContent {
+.mobilePage {
     display:none;
   }
 }
-#mobilePageBrowserContent img{
+.mobilePage img{
 max-width: 90%;
 max-height: 90%;
 margin: 30px 50px 30px 20px;
@@ -135,17 +136,20 @@ margin: 30px 50px 30px 20px;
   display: none;
 }
 #signUp {
-  color: white;
-  background-color: black;
+  height: 40px;
+  width: 150px;
+  color: #E0D6CC;
+  background-color: #140A00;
   border-radius: 5px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
   padding: 10px;
-  margin: 20px 200px 20px 200px;
+  margin: 20px 50px 20px 50px;
 }
 .signUpForm {
-  text-align: center;
+  padding: 10px;
+  margin: 20px 100px 20px 100px;
 
 }
 .browserNav {
@@ -256,7 +260,6 @@ margin: 30px 50px 30px 20px;
   padding: 30px 50px 30px 20px;
   overflow: scroll;
 }
-
 @media only screen and (min-width: 480px) {
   .browserPage, .browserPageCheese, .browserPageNews {
     width: 60%;
@@ -276,17 +279,64 @@ margin: 30px 50px 30px 20px;
   margin: 30px 50px 30px 20px;
   overflow: scroll;
 }
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px 10% 20px auto;
+  border-radius: 4px;
+  width: auto;
+}
 
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+a.controlPrev, a.controlNext {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  }
+  a.controlNext {
+  float: right;
+  margin-left: 430px;
+  }
 
 footer {
   width: 90%;
-  height: 200px;
+  height: 204px;
   margin:auto;
   background-color: #E0D6CC;
   clear: both;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
+  border-top: 4px dotted #140A00;
 }
  #mobileContact {
   width: 30%;
@@ -312,12 +362,18 @@ footer {
 }
 .hoursBox ul {
   font-size: 15px;
-  padding: 10% 10px 10% 10px;
+  padding: 0% 10px 10% 10px;
   list-style: none;
   text-align: center;
   line-height: 175%;
 }
-
+.mobileContactFooter li img {
+height: 30%;
+width: 30%;
+padding: 1%;
+margin-top: 20%;
+margin-left: 10%;
+}
 .mobileContactFooter li {
   font-size: 15px;
   padding: 10px;
@@ -326,12 +382,13 @@ footer {
   display: block;
 }
 #mobileContact li:nth-child(1n+2) {
-  padding: 15px;
+  padding: 0%;
 }
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 480px) {
   #mobileContact li:nth-child(1n+2) {
     display: inline;
-    padding-left: 20%;
+    padding: 0%;
+    margin-top: 0%;
   }
 @media only screen and (min-width: 580px) {
     #mobileContact li:first-child {
@@ -339,5 +396,7 @@ footer {
     }
 @media only screen and (min-width: 580px) {
     #mobileContact li img {
-    margin: 20% 4%;
+    margin: 10% 4%;
+    height: 40%;
+    width: 40%;
     }
