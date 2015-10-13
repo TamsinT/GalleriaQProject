@@ -55,7 +55,7 @@ $("#signUp").on('click', submitEmail);
        function moveLeft() {
            $('#slider ul').animate({
                left: + slideWidth
-           }, 400, function () {
+           }, 1000, function () {
                $('#slider ul li:last-child').prependTo('#slider ul');
                $('#slider ul').css('left', '');
            });
@@ -64,7 +64,7 @@ $("#signUp").on('click', submitEmail);
        function moveRight() {
            $('#slider ul').animate({
                left: - slideWidth
-           }, 400, function () {
+           }, 1000, function () {
                $('#slider ul li:first-child').appendTo('#slider ul');
                $('#slider ul').css('left', '');
            });

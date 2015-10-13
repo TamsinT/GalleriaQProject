@@ -283,25 +283,22 @@ margin: 30px 50px 30px 20px;
 #slider {
   position: relative;
   overflow: hidden;
-  margin: 20px 10% 20px auto;
-  border-radius: 4px;
-  width: auto;
+  margin: 0 auto;
+  width: 60%;
+  align-items: center;
 }
 
 #slider ul {
   position: absolute;
-  margin: 0;
+  margin left: 10%;
   padding: 0;
-  height: 200px;
   list-style: none;
 }
 #slider ul li {
-  position: relative;
   display: block;
   float: left;
   margin: 0;
   padding: 0;
-  width: 80%;
   height: 300px;
   background: #ccc;
   text-align: center;
@@ -312,9 +309,8 @@ a.controlPrev, a.controlNext {
   top: 40%;
   z-index: 999;
   display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
+  width: 50px;
+  height: 50px;
   background: #2a2a2a;
   color: #fff;
   text-decoration: none;
@@ -322,11 +318,16 @@ a.controlPrev, a.controlNext {
   font-size: 18px;
   opacity: 0.8;
   cursor: pointer;
+  padding: 15px;
   }
   a.controlNext {
   float: right;
-  margin-left: 430px;
+  margin-left: 481px;
+  border-radius: 10px 0px 0px 10px;
   }
+a.controlPrev {
+  border-radius: 0px 10px 10px 0px;
+}
 
 footer {
   width: 90%;
