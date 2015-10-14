@@ -175,7 +175,7 @@ margin: 30px 50px 30px 20px;
   border-top: 2px dotted black;
 }
 .browserNav ul li:first-child {
-  border-top: none;
+  border-top: 0;
 }
 .browserNav ul li a {
   width: 90%;
