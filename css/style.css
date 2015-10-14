@@ -145,11 +145,14 @@ margin: 30px 50px 30px 20px;
   font-weight: 400;
   font-size: 20px;
   padding: 10px;
-  margin: 20px 50px 20px 50px;
+  margin: 20px;
+  align-items: center;
 }
 .signUpForm {
-  padding: 10px;
-  margin: 20px 100px 20px 100px;
+  width: inherit;
+  padding: 10%;
+  margin: 15px auto 15px auto;
+  align-items: center;
 
 }
 .browserNav {
@@ -268,6 +271,7 @@ margin: 30px 50px 30px 20px;
     display:block;
   }
 }
+
 #cheesePost1 img {
   max-width: 90%;
   max-height: 90%;
@@ -277,7 +281,7 @@ margin: 30px 50px 30px 20px;
 #newsPost1 img {
   max-width: 90%;
   max-height: 90%;
-  margin: 30px 50px 30px 20px;
+  margin: 30px 10% 30px 10%;
   overflow: scroll;
 }
 #slider {
@@ -286,6 +290,7 @@ margin: 30px 50px 30px 20px;
   margin: 0 auto;
   width: 60%;
   align-items: center;
+  display: none;
 }
 
 #slider ul {
@@ -293,6 +298,11 @@ margin: 30px 50px 30px 20px;
   margin left: 10%;
   padding: 0;
   list-style: none;
+}
+@media only screen and (min-width: 480px) {
+  #slider  {
+    display: block;
+  }
 }
 #slider ul li {
   display: block;
@@ -332,7 +342,7 @@ a.controlPrev {
 footer {
   width: 90%;
   height: 204px;
-  margin:auto;
+  margin: auto;
   background-color: #E0D6CC;
   clear: both;
   font-family: 'Josefin Sans', sans-serif;
@@ -340,16 +350,79 @@ footer {
   font-size: 15px;
   border-top: 4px dotted #140A00;
 }
- #mobileContact {
+.mobileContactFooter {
   width: 30%;
   height: 150px;
   float: left;
   padding: 10px;
   margin: 0;
 }
-#mobileContact ul {
-  display: block;
+ #mobileContact {
+  height: 150px;
+  float: left;
+  padding: 10px;
+  margin: 0;
 }
+#mobileContact ul {
+  margin-left: 30%;
+  align-items: center;
+}
+
+#mobileContact li img {
+padding: 1%;
+margin-top: 20%;
+}
+#mobileContact li {
+  font-size: 15px;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+}
+#mobileContact li:nth-child(1n+2) {
+  padding: 0%;
+  min-width: 32px;
+  max-width: 32px;
+  margin-left: 20%;
+}
+@media only screen and (min-width: 480px) {
+  #mobileContact li:nth-child(1n+2) {
+    padding: 0%;
+    margin-top: 0%;
+    margin-left: 10%;
+    min-width: 42px;
+    max-width: 42px;
+  }
+}
+@media only screen and (min-width: 580px) {
+    #mobileContact li:first-child {
+    margin-top: 5%;
+    font-size: 20px;
+    }
+  }
+@media only screen and (min-width: 580px) {
+    #mobileContact li img {
+    margin: 50% 4% 20% 4%;
+    height: 42px;
+    width: 42px;
+    display: inline-block;
+    }
+    #mobileContact li:nth-child(2n) {
+      float: right;
+    }
+  }
+  @media only screen and (min-width: 780px) {
+      #mobileContact li img {
+      margin-top: 50%;
+      margin-left: 20%;
+      height: 52px;
+      width: 52px;
+      display: inline-block;
+      align-content: center;
+      }
+     #mobileContact li:nth-child(1n) {
+       margin-left: 20px;
+     }
+    }
 
 .footerMap {
   width: 50%;
@@ -363,42 +436,15 @@ footer {
   margin: none;
 }
 .hoursBox ul {
-  font-size: 15px;
+  font-size: 12px;
+  margin-top: 20%;
   padding: 0% 10px 10% 10px;
   list-style: none;
   text-align: center;
   line-height: 175%;
 }
-.mobileContactFooter li img {
-height: 30%;
-width: 30%;
-padding: 1%;
-margin-top: 20%;
-margin-left: 10%;
-}
-.mobileContactFooter li {
-  font-size: 15px;
-  padding: 10px;
-  list-style: none;
-  text-align: center;
-  display: block;
-}
-#mobileContact li:nth-child(1n+2) {
-  padding: 0%;
-}
 @media only screen and (min-width: 480px) {
-  #mobileContact li:nth-child(1n+2) {
-    display: inline;
-    padding: 0%;
-    margin-top: 0%;
+  .hoursBox ul {
+    font-size: 15px;
   }
-@media only screen and (min-width: 580px) {
-    #mobileContact li:first-child {
-    margin-top: 20px;
-    }
-@media only screen and (min-width: 580px) {
-    #mobileContact li img {
-    margin: 10% 4%;
-    height: 40%;
-    width: 40%;
-    }
+}

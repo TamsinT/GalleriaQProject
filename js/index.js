@@ -70,6 +70,8 @@ $("#signUp").on('click', submitEmail);
            });
        };
 
+       
+
        $('a.controlPrev').click(function (a) {
          a.preventDefault();
            moveLeft();
